@@ -1,15 +1,15 @@
-Multi-Agent AI System
+## Multi-Agent AI System
 
-Project Overview
+# Project Overview
 This project is a multi-agent AI system that processes and analyzes emails, PDFs, and JSON files. It uses four AI agents to classify document types, identify intents, extract data, and store shared context in a SQLite database. The system is built with Python 3.12 and uses libraries like transformers, torch, PyPDF2, and pdfplumber.
 
-What the System Does
+# What the System Does
 The system handles three input types:
 - Emails (sample_email.txt): Extracts sender, intent (like like RFQ), urgency, and content.
 - PDFs (sample_invoice.pdf): Extracts invoice details like ID, date, sender, and amount.
 - JSON files (sample_json.json): Validates structure and extracts fields like sender, recipient, amount, and date.
 
-Four agents collaborate:
+# Four agents collaborate:
 1. Classifier Agent: Identifies document type (Email, PDF, JSON) and intent.
 2. Email Agent: Processes email files.
 3. PDF Agent: Extracts data from PDF invoices.
@@ -17,14 +17,14 @@ Four agents collaborate:
 
 A SQLite database (memory.db) stores context across agents, with each input assigned a unique thread ID.
 
-Prerequisites
+# Prerequisites
 You need:
 - Python 3.12 (download from python.org)
 - Git (download from git-scm.com)
 - A code editor (like VS Code or Notepad)
 - Optional: DB Browser for SQLite to view memory.db (download from sqlitebrowser.org)
 
-Setup Instructions
+# Setup Instructions
 Follow these steps to run the project:
 1. Clone the repository:
    git clone https://github.com/Pranavsai1410/multi-agent-ai-system.git
@@ -50,7 +50,7 @@ Follow these steps to run the project:
    Open memory.db in DB Browser for SQLite.
    Check the context table for processed data.
 
-File Structure
+# File Structure
 The project directory contains:
 - agents/: Contains agent scripts
   - classifier_agent.py: Classifies document type and intent
@@ -70,14 +70,14 @@ The project directory contains:
 - .gitignore: Git ignore file
 - output.log: Sample output log (generated after running)
 
-Demo
+# Demo
 A demo video is available at: [Insert YouTube or Google Drive link after uploading].
 The video shows:
 - Running main.py to process sample_email.txt, sample_invoice.pdf, and sample_json.json.
 - Console output with agent results.
 - Viewing the context table in memory.db using DB Browser for SQLite.
 
-Sample Output
+# Sample Output
 Example console output from running python main.py:
 Processing inputs/sample_email.txt...
 Classified as Email with intent RFQ (Thread ID: <uuid>)
@@ -96,7 +96,7 @@ Context stored in memory.db
 
 The full output is in output.log.
 
-Troubleshooting
+# Troubleshooting
 - Large File Errors in Git:
   The multi-agent-env/ directory is excluded via .gitignore. Check for dependency files (like torch_cpu.dll):
   git ls-files | findstr "multi-agent-env"
@@ -111,17 +111,5 @@ Troubleshooting
   Test PDF processing:
   python test_pdf.py
 
-Submission Details
-Developed for FlowBit AI. Submission details:
-- GitHub Repository: https://github.com/Pranavsai1410/multi-agent-ai-system
-- Demo Video: [Insert link after uploading]
-- Output Log: In output.log
-- Contact: Submitted to soham.shah@flowbitai.com by [Your Name] on or before June 1, 2025.
 
-Acknowledgments
-Built with Python 3.12 and open-source libraries. Thanks to FlowBit AI for the opportunity.
-
-[Your Name]
-[Your Email, if applicable]
-May 28, 2025
 
