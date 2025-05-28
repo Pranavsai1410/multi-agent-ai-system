@@ -1,15 +1,15 @@
-## Multi-Agent AI System
+# Multi-Agent AI System
 
-# Project Overview
+## Project Overview
 This project is a multi-agent AI system that processes and analyzes emails, PDFs, and JSON files. It uses four AI agents to classify document types, identify intents, extract data, and store shared context in a SQLite database. The system is built with Python 3.12 and uses libraries like transformers, torch, PyPDF2, and pdfplumber.
 
-# What the System Does
+## What the System Does
 The system handles three input types:
 - Emails (sample_email.txt): Extracts sender, intent (like like RFQ), urgency, and content.
 - PDFs (sample_invoice.pdf): Extracts invoice details like ID, date, sender, and amount.
 - JSON files (sample_json.json): Validates structure and extracts fields like sender, recipient, amount, and date.
 
-# Four agents collaborate:
+## Four agents collaborate:
 1. Classifier Agent: Identifies document type (Email, PDF, JSON) and intent.
 2. Email Agent: Processes email files.
 3. PDF Agent: Extracts data from PDF invoices.
@@ -17,14 +17,14 @@ The system handles three input types:
 
 A SQLite database (memory.db) stores context across agents, with each input assigned a unique thread ID.
 
-# Prerequisites
+## Prerequisites
 You need:
 - Python 3.12 (download from python.org)
 - Git (download from git-scm.com)
 - A code editor (like VS Code or Notepad)
 - Optional: DB Browser for SQLite to view memory.db (download from sqlitebrowser.org)
 
-# Setup Instructions
+## Setup Instructions
 Follow these steps to run the project:
 1. Clone the repository:
    git clone https://github.com/Pranavsai1410/multi-agent-ai-system.git
@@ -50,7 +50,7 @@ Follow these steps to run the project:
    Open memory.db in DB Browser for SQLite.
    Check the context table for processed data.
 
-# File Structure
+## File Structure
 The project directory contains:
 - agents/: Contains agent scripts
   - classifier_agent.py: Classifies document type and intent
@@ -77,26 +77,12 @@ The video shows:
 - Console output with agent results.
 - Viewing the context table in memory.db using DB Browser for SQLite.
 
-# Sample Output
-Example console output from running python main.py:
-Processing inputs/sample_email.txt...
-Classified as Email with intent RFQ (Thread ID: <uuid>)
-Email Agent Result: {'sender': 'customer@example.com', 'intent': 'RFQ', 'urgency': 'Normal', 'content': 'Request for quotation for 100 units...'}
-Context stored in memory.db
+## Sample Output
+![Sample Output Screenshot](https://github.com/Pranavsai1410/multi-agent-ai-system/blob/main/Screenshot%202025-05-28%20201755.png?raw=true)
 
-Processing inputs/sample_invoice.pdf...
-Classified as PDF with intent Invoice (Thread ID: <uuid>)
-PDF Agent Result: {'invoice_id': '12345', 'date': '2025-05-25', 'sender': 'vendor@example.com', 'amount': 5000.0}
-Context stored in memory.db
 
-Processing inputs/sample_json.json...
-Classified as JSON with intent Invoice (Thread ID: <uuid>)
-JSON Agent Result: {'sender': 'vendor@example.com', 'recipient': 'buyer@example.com', 'amount': 5000.0, 'date': '2025-05-28', 'id': 'INV12345'}, Anomalies: []
-Context stored in memory.db
 
-The full output is in output.log.
-
-# Troubleshooting
+## Troubleshooting
 - Large File Errors in Git:
   The multi-agent-env/ directory is excluded via .gitignore. Check for dependency files (like torch_cpu.dll):
   git ls-files | findstr "multi-agent-env"
