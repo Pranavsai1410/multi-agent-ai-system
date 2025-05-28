@@ -1,0 +1,7 @@
+{
+    "sender": "vendor@example.com",
+    "recipient": "buyer@example.com",
+    "amount": 5000.00,
+    "date": "2025-05-28",
+    "id": "INV12345"
+}

@@ -1,0 +1,6 @@
+From: customer@example.com
+Subject: Urgent Request for Quote
+Dear Team,
+Please provide a quote for 100 units of Product X by tomorrow.
+Best,
+Customer
