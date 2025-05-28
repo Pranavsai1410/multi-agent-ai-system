@@ -70,12 +70,11 @@ The project directory contains:
 - .gitignore: Git ignore file
 - output.log: Sample output log (generated after running)
 
-# Demo
-A demo video is available at: [Insert YouTube or Google Drive link after uploading].
+## Demo
+A demo video is available at: ![output video](https://drive.google.com/file/d/1dRyHVzqDj5HZFjydG8T8NtuRII7hHzSn/view?usp=sharing).
 The video shows:
 - Running main.py to process sample_email.txt, sample_invoice.pdf, and sample_json.json.
 - Console output with agent results.
-- Viewing the context table in memory.db using DB Browser for SQLite.
 
 ## Sample Output
 ![Sample Output Screenshot](https://github.com/Pranavsai1410/multi-agent-ai-system/blob/main/Screenshot%202025-05-28%20201755.png?raw=true)
