@@ -71,7 +71,7 @@ The project directory contains:
 - output.log: Sample output log (generated after running)
 
 ## Demo
-A demo video is available at: ![output video](https://drive.google.com/file/d/1dRyHVzqDj5HZFjydG8T8NtuRII7hHzSn/view?usp=sharing).
+A demo video is available at: [https://drive.google.com/file/d/1dRyHVzqDj5HZFjydG8T8NtuRII7hHzSn/view?usp=sharing].
 The video shows:
 - Running main.py to process sample_email.txt, sample_invoice.pdf, and sample_json.json.
 - Console output with agent results.
